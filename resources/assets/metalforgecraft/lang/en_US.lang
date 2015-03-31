@@ -1,0 +1,207 @@
+itemGroup.MFC=MFC Metal Forge Craft
+
+
+tile.mfcorealuminium.name=Bauxite
+tile.mfcorebismuth.name=Bismite
+tile.mfcorecalcium.name=Flurite
+tile.mfcorecobalt.name=Cobalt Ore
+tile.mfcorecopper.name=Chalcocite
+tile.mfcorelead.name=Galena
+tile.mfcoremagnesium.name=Magnesium Ore
+tile.mfcorenickel.name=Nickel Ore
+tile.mfcoreplatinum.name=Alluvium
+tile.mfcoreosmium.name=Osmium Ore
+tile.mfcoresilver.name=Silver Ore
+tile.mfcoretin.name=Cassiterite
+tile.mfcoretungsten.name=Wolframite
+tile.mfcorezinc.name=Sphalerite
+tile.mfcorecinnabar.name=Cinnabar Ore
+tile.mfcorechromium.name=Chromite
+tile.MFCCrudeOil.name=Crude Oil
+
+tile.MFCSmelter.name=Smelter
+
+item.MFCOilBucket.name= Crude Oil Bucket
+item.mfcingotaluminium.name=Aluminium Ingot
+item.mfcingotbismuth.name=Bismuth Ingot
+item.mfcingotcalcium.name=Calcium Ingot
+item.mfcingotcobalt.name=Cobalt Ingot
+item.mfcingotcopper.name=Copper Ingot
+item.mfcingotlead.name=Lead Ingot
+item.mfcingotmagnesium.name=Magnesium Ingot
+item.mfcingotnickel.name=Nickel Ingot
+item.mfcingotplatinum.name=Platinum Ingot
+item.mfcingotosmium.name=Osmium Ingot
+item.mfcingotsilver.name=Silver Ingot
+item.mfcingottin.name=Tin Ingot
+item.mfcingottungsten.name=Tungsten Ingot
+item.mfcingotzinc.name=Zinc Ingot
+item.mfccrystalcinnabar.name=Cinnabar
+item.mfcalloycast.name=Alloy Cast
+item.mfcrawalloycast.name=Raw Alloy Cast
+item.mfcingotbrasscast.name=Brass Alloy Cast
+item.mfcingotbrass.name=Brass Ingot
+item.mfcingotchromium.name=Chromium Ingot
+
+item.MFCAloe.name=Aloe vera
+item.MFCArnica.name=Arnica flower
+item.MFCGinger.name=Ginger root
+item.MFCPepermint.name=Peppermint leaves
+item.MFCPeperminttea.name=Peppermint tea
+item.MFCPepermintoil.name=Peppermint oil
+item.MFCTeatreeoil.name=Tea Tree oil
+item.MFCHerbaltea.name=Herbal tea
+
+item.MFCAluminiumAxe.name=Aluminium Axe
+item.MFCAluminiumPickaxe.name=Aluminium Pickaxe
+item.MFCAluminiumSword.name=Aluminium Sword
+item.MFCAluminiumShovel.name=Aluminium Shovel
+item.MFCAluminiumHoe.name=Aluminium Hoe
+
+item.MFCBismuthAxe.name=Bismuth Axe
+item.MFCBismuthPickaxe.name=Bismuth Pickaxe
+item.MFCBismuthSword.name=Bismuth Sword
+item.MFCBismuthShovel.name=Bismuth Shovel
+item.MFCBismuthHoe.name=Bismuth Hoe
+
+item.MFCCalciumAxe.name=Aluminium Axe
+item.MFCCalciumPickaxe.name=Calcium Pickaxe
+item.MFCCalciumSword.name=Calcium Sword
+item.MFCCalciumShovel.name=Calcium Shovel
+item.MFCCalciumHoe.name=Calcium Hoe
+
+item.MFCCobaltAxe.name=Cobalt Axe
+item.MFCCobaltPickaxe.name=Cobalt Pickaxe
+item.MFCCobaltSword.name=Cobalt Sword
+item.MFCCobaltShovel.name=Cobalt Shovel
+item.MFCCobaltHoe.name=Cobalt Hoe
+
+item.MFCCopperAxe.name=Copper Axe
+item.MFCCopperPickaxe.name=Copper Pickaxe
+item.MFCCopperSword.name=Copper Sword
+item.MFCCopperShovel.name=Copper Shovel
+item.MFCCopperHoe.name=Copper Hoe
+
+item.MFCLeadAxe.name=Lead Axe
+item.MFCLeadPickaxe.name=Lead Pickaxe
+item.MFCLeadSword.name=Lead Sword
+item.MFCLeadShovel.name=Lead Shovel
+item.MFCLeadHoe.name=Lead Hoe
+
+item.MFCMagnesiumAxe.name=Magnesium Axe
+item.MFCMagnesiumPickaxe.name=Magnesium Pickaxe
+item.MFCMagnesiumSword.name=Magnesium Sword
+item.MFCMagnesiumShovel.name=Magnesium Shovel
+item.MFCMagnesiumHoe.name=Magnesium Hoe
+
+item.MFCNickelAxe.name=Nickel Axe
+item.MFCNickelPickaxe.name=Nickel Pickaxe
+item.MFCNickelSword.name=Nickel Sword
+item.MFCNickelShovel.name=Nickel Shovel
+item.MFCNickelHoe.name=Nickel Hoe
+
+item.MFCOsmiumAxe.name=Osmium Axe
+item.MFCOsmiumPickaxe.name=Osmium Pickaxe
+item.MFCOsmiumSword.name=Osmium Sword
+item.MFCOsmiumShovel.name=Osmium Shovel
+item.MFCOsmiumHoe.name=Osmium Hoe
+
+item.MFCPlatinumAxe.name=Platinum Axe
+item.MFCPlatinumPickaxe.name=Platinum Pickaxe
+item.MFCPlatinumSword.name=Platinum Sword
+item.MFCPlatinumShovel.name=Platinum Shovel
+item.MFCPlatinumHoe.name=Platinum Hoe
+
+item.MFCSilverAxe.name=Silver Axe
+item.MFCSilverPickaxe.name=Silver Pickaxe
+item.MFCSilverSword.name=Silver Sword
+item.MFCSilverShovel.name=Silver Shovel
+item.MFCSilverHoe.name=Silver Hoe
+
+item.MFCTinAxe.name=Tin Axe
+item.MFCTinPickaxe.name=Tin Pickaxe
+item.MFCTinSword.name=Tin Sword
+item.MFCTinShovel.name=Tin Shovel
+item.MFCTinHoe.name=Tin Hoe
+
+item.MFCTungstenAxe.name=Tungsten Axe
+item.MFCTungstenPickaxe.name=Tungsten Pickaxe
+item.MFCTungstenSword.name=Tungsten Sword
+item.MFCTungstenShovel.name=Tungsten Shovel
+item.MFCTungstenHoe.name=Tungsten Hoe
+
+item.MFCZincAxe.name=Zinc Axe
+item.MFCZincPickaxe.name=Zinc Pickaxe
+item.MFCZincSword.name=Zinc Sword
+item.MFCZincShovel.name=Zinc Shovel
+item.MFCZincHoe.name=Zinc Hoe
+
+item.MFCAluminiumHelmet.name=Aluminium Helmet
+item.MFCAluminiumChestplate.name=Aluminium Chestplate
+item.MFCAluminiumLeggings.name=Aluminium Leggings
+item.MFCAluminiumBoots.name=Aluminium Boots
+
+item.MFCBismuthHelmet.name=Bismuth Helmet
+item.MFCBismuthChestplate.name=Bismuth Chestplate
+item.MFCBismuthLeggings.name=Bismuth Leggings
+item.MFCBismuthBoots.name=Bismuth Boots
+
+item.MFCCalciumHelmet.name=Calcium Helmet
+item.MFCCalciumChestplate.name=Calcium Chestplate
+item.MFCCalciumLeggings.name=Calcium Leggings
+item.MFCCalciumBoots.name=Calcium Boots
+
+item.MFCCobaltHelmet.name=Cobalt Helmet
+item.MFCCobaltChestplate.name=Cobalt Chestplate
+item.MFCCobaltLeggings.name=Cobalt Leggings
+item.MFCCobaltBoots.name=Cobalt Boots
+
+item.MFCCopperHelmet.name=Copper Helmet
+item.MFCCopperChestplate.name=Copper Chestplate
+item.MFCCopperLeggings.name=Copper Leggings
+item.MFCCopperBoots.name=Copper Boots
+
+item.MFCLeadHelmet.name=Lead Helmet
+item.MFCLeadChestplate.name=Lead Chestplate
+item.MFCLeadLeggings.name=Lead Leggings
+item.MFCLeadBoots.name=Lead Boots
+
+item.MFCMagnesiumHelmet.name=Magnesium Helmet
+item.MFCMagnesiumChestplate.name=Magnesium Chestplate
+item.MFCMagnesiumLeggings.name=Magnesium Leggings
+item.MFCMagnesiumBoots.name=Magnesium Boots
+
+item.MFCNickelHelmet.name=Nickel Helmet
+item.MFCNickelChestplate.name=Nickel Chestplate
+item.MFCNickelLeggings.name=Nickel Leggings
+item.MFCNickelBoots.name=Nickel Boots
+
+item.MFCOsmiumHelmet.name=Osmium Helmet
+item.MFCOsmiumChestplate.name=Osmium Chestplate
+item.MFCOsmiumLeggings.name=Osmium Leggings
+item.MFCOsmiumBoots.name=Osmium Boots
+
+item.MFCPlatinumHelmet.name=Platinum Helmet
+item.MFCPlatinumChestplate.name=Platinum Chestplate
+item.MFCPlatinumLeggings.name=Platinum Leggings
+item.MFCPlatinumBoots.name=Platinum Boots
+
+item.MFCSilverHelmet.name=Silver Helmet
+item.MFCSilverChestplate.name=Silver Chestplate
+item.MFCSilverLeggings.name=Silver Leggings
+item.MFCSilverBoots.name=Silver Boots
+
+item.MFCTinHelmet.name=Tin Helmet
+item.MFCTinChestplate.name=Tin Chestplate
+item.MFCTinLeggings.name=Tin Leggings
+item.MFCTinBoots.name=Tin Boots
+
+item.MFCTungstenHelmet.name=Tungsten Helmet
+item.MFCTungstenChestplate.name=Tungsten Chestplate
+item.MFCTungstenLeggings.name=Tungsten Leggings
+item.MFCTungstenBoots.name=Tungsten Boots
+
+item.MFCZincHelmet.name=Zinc Helmet
+item.MFCZincChestplate.name=Zinc Chestplate
+item.MFCZincLeggings.name=Zinc Leggings
+item.MFCZincBoots.name=Zinc Boots
