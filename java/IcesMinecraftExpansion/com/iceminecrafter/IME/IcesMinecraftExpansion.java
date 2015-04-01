@@ -103,6 +103,7 @@ import com.iceminecrafter.IME.items.herbs.MFCPepermint;
 import com.iceminecrafter.IME.items.herbs.MFCPepermintoil;
 import com.iceminecrafter.IME.items.herbs.MFCPeperminttea;
 import com.iceminecrafter.IME.items.herbs.MFCTeatreeoil;
+import com.iceminecrafter.IME.proxy.ClientProxy;
 import com.iceminecrafter.IME.proxy.ServerProxy;
 import com.iceminecrafter.IME.tileentity.TileEntityMFCSmelter;
 import com.iceminecrafter.IME.tools.MFCAluminiumAxe;
@@ -189,23 +190,31 @@ import com.iceminecrafter.IME.tools.MFCZincSword;
 
 
 
+
+
+
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid = IcesMinecraftExpansion.modid, name = IcesMinecraftExpansion.name, version = IcesMinecraftExpansion.version)
 
 public class IcesMinecraftExpansion{
 	
-	
+	public static ServerProxy serverproxy;
+	public static ClientProxy clientproxy;
 	@Instance(IcesMinecraftExpansion.modid)
 	public static IcesMinecraftExpansion modInstance;
-
+	@SidedProxy(clientSide="com.iceminecrafter.IME.proxy.ClientProxy", serverSide="com.iceminecrafter.IME.proxy.ServerProxy")
 	
 	//armour material
 	
@@ -1160,27 +1169,21 @@ public class IcesMinecraftExpansion{
 		
 		MinecraftForge.EVENT_BUS.register(new MFCFillBucketEvent());
 		
+		clientproxy.registerRenderThings();
+		serverproxy.registerRenderThings();
+		serverproxy.registerTileEntities();
+		serverproxy.registerNetworkStuff();
 		
-		EntityMFC.EntityRegistry();
-		
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCFly.class, new RenderMFCFly(new Fly(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCCharger.class, new RenderMFCCharger(new Charger(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCChub.class, new RenderMFCChub(new Chub(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCDSpitter.class, new RenderMFCDSpitter(new DSpitter(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCDukeofFlies.class, new RenderMFCDukeofFlies(new Duke_Of_Flies(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCGurgling.class, new RenderMFCGurgling(new Gurgling(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCLargeFly.class, new RenderMFCLargeFly(new Large_Fly(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCMaggot.class, new RenderMFCMaggot(new Maggot(), 0));
-		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCSpitter.class, new RenderMFCSpitter(new Spitter(), 0));
-		RenderingRegistry.registerEntityRenderingHandler(EntityMechon_M69.class, new RenderMechon_M69(new Mechon_M69(), 0));
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent e){
 		System.out.println("[IME]: How many times do i make science jokes, periodically");
 		
-		NetworkRegistry.INSTANCE.registerGuiHandler(modInstance, new MFCGuiHandler());
-		GameRegistry.registerTileEntity(TileEntityMFCSmelter.class, modid);
+		
+		
+	
+		
 		
 		FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack(CrudeOil.getName(), FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(MFCOilBucket), new ItemStack(Items.bucket)));
 		FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack(ShaleOil.getName(), FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(MFCShaleOilBucket), new ItemStack(Items.bucket)));
