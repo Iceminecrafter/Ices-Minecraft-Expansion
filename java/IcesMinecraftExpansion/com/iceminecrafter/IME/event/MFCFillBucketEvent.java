@@ -2,6 +2,7 @@ package com.iceminecrafter.IME.event;
 
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.eventhandler.Event.Result;
@@ -34,8 +35,8 @@ public class MFCFillBucketEvent {
 		  Block block = world.getBlock(pos.blockX, pos.blockY, pos.blockZ);
 		  
 		  
-		if(block == IcesMinecraftExpansion.MFCCrudeOil){
-			return new ItemStack(IcesMinecraftExpansion.MFCOilBucket);
+		if(block == CommonProxy.MFCCrudeOil){
+			return new ItemStack(CommonProxy.MFCOilBucket);
 		}
 		
 		return null;

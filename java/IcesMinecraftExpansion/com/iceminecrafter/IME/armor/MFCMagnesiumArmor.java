@@ -1,6 +1,7 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -11,23 +12,23 @@ public class MFCMagnesiumArmor extends ItemArmor{
 	public MFCMagnesiumArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(IcesMinecraftExpansion.MFC);
+		setCreativeTab(CommonProxy.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == IcesMinecraftExpansion.MFCMagnesiumHelmet){
+		if(stack.getItem() == CommonProxy.MFCMagnesiumHelmet){
 			return "metalforgecraft" + ":textures/models/armor/MagnesiumArmor_1.png";
 		}
 		
-		if(stack.getItem() == IcesMinecraftExpansion.MFCMagnesiumChestplate){
+		if(stack.getItem() == CommonProxy.MFCMagnesiumChestplate){
 			return "metalforgecraft" + ":textures/models/armor/MagnesiumArmor_1.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCMagnesiumLeggings){
+		if(stack.getItem() == CommonProxy.MFCMagnesiumLeggings){
 			return "metalforgecraft" + ":textures/models/armor/MagnesiumArmor_2.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCMagnesiumBoots){
+		if(stack.getItem() == CommonProxy.MFCMagnesiumBoots){
 			return "metalforgecraft" + ":textures/models/armor/MagnesiumArmor_1.png";
 		}
 		else {

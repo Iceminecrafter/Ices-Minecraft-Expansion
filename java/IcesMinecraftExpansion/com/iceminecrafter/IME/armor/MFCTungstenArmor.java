@@ -1,6 +1,7 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -11,23 +12,23 @@ public class MFCTungstenArmor extends ItemArmor{
 	public MFCTungstenArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(IcesMinecraftExpansion.MFC);
+		setCreativeTab(CommonProxy.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == IcesMinecraftExpansion.MFCTungstenHelmet){
+		if(stack.getItem() == CommonProxy.MFCTungstenHelmet){
 			return "metalforgecraft" + ":textures/models/armor/TungstenArmor_1.png";
 		}
 		
-		if(stack.getItem() == IcesMinecraftExpansion.MFCTungstenChestplate){
+		if(stack.getItem() == CommonProxy.MFCTungstenChestplate){
 			return "metalforgecraft" + ":textures/models/armor/TungstenArmor_1.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCTungstenLeggings){
+		if(stack.getItem() == CommonProxy.MFCTungstenLeggings){
 			return "metalforgecraft" + ":textures/models/armor/TungstenArmor_2.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCTungstenBoots){
+		if(stack.getItem() == CommonProxy.MFCTungstenBoots){
 			return "metalforgecraft" + ":textures/models/armor/TungstenArmor_1.png";
 		}
 		else {

@@ -6,12 +6,20 @@ import com.iceminecrafter.IME.Mob.RenderMechon_M69;
 import com.iceminecrafter.IME.Models.Mechon_M69;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends ServerProxy{
+public class ClientProxy extends CommonProxy{
+	@Override
+	public void preinit(FMLPreInitializationEvent e){
+		super.preinit(e);
+	}
 	
-	
-	public void registerRenderThings(){
-		EntityMFC.EntityRegistry();
+	@Override
+	public void init(FMLInitializationEvent e){
+		super.init(e);
+		//EntityMFC.EntityRegistry();
 		
 		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCFly.class, new RenderMFCFly(new Fly(), 0));
 		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCCharger.class, new RenderMFCCharger(new Charger(), 0));
@@ -23,7 +31,11 @@ public class ClientProxy extends ServerProxy{
 		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCMaggot.class, new RenderMFCMaggot(new Maggot(), 0));
 		//RenderingRegistry.registerEntityRenderingHandler(EntityMFCSpitter.class, new RenderMFCSpitter(new Spitter(), 0));
 		
-		RenderingRegistry.registerEntityRenderingHandler(EntityMechon_M69.class, new RenderMechon_M69(new Mechon_M69(), 0));
+		//RenderingRegistry.registerEntityRenderingHandler(EntityMechon_M69.class, new RenderMechon_M69(new Mechon_M69(), 0));
+	}
+	@Override
+	public void postinit(FMLPostInitializationEvent e){
+		super.postinit(e);
 	}
 
 }

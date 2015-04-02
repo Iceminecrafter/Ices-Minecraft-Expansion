@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -27,25 +28,25 @@ public class MFCSmelterRecipes {
 	private MFCSmelterRecipes(){
 		
 		
-		this.addRecipie(IcesMinecraftExpansion.mfcrawalloycast, new ItemStack(IcesMinecraftExpansion.mfcalloycast), 0.5F);
+		this.addRecipie(CommonProxy.mfcrawalloycast, new ItemStack(CommonProxy.mfcalloycast), 0.5F);
 		
 		
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorealuminium, new ItemStack(IcesMinecraftExpansion.mfcingotaluminium, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorebismuth, new ItemStack(IcesMinecraftExpansion.mfcingotbismuth, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorecalcium, new ItemStack(IcesMinecraftExpansion.mfcingotcalcium, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorecobalt, new ItemStack(IcesMinecraftExpansion.mfcingotcobalt, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorecopper, new ItemStack(IcesMinecraftExpansion.mfcingotcopper, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorelead, new ItemStack(IcesMinecraftExpansion.mfcingotlead, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoremagnesium, new ItemStack(IcesMinecraftExpansion.mfcingotmagnesium, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorenickel, new ItemStack(IcesMinecraftExpansion.mfcingotaluminium, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoreosmium, new ItemStack(IcesMinecraftExpansion.mfcingotnickel, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoreplatinum, new ItemStack(IcesMinecraftExpansion.mfcingotplatinum, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoresilver, new ItemStack(IcesMinecraftExpansion.mfcingotsilver, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoretin, new ItemStack(IcesMinecraftExpansion.mfcingottin, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcoretungsten, new ItemStack(IcesMinecraftExpansion.mfcingottungsten, 2), 1.0F);
-		this.addRecipieBlock(IcesMinecraftExpansion.mfcorezinc, new ItemStack(IcesMinecraftExpansion.mfcingotzinc, 2), 1.0F);
-		this.addRecipieBlock(Blocks.iron_ore, new ItemStack(IcesMinecraftExpansion.mfcingotzinc, 2), 1.0F);
-		this.addRecipieBlock(Blocks.gold_ore, new ItemStack(IcesMinecraftExpansion.mfcingotzinc, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorealuminium, new ItemStack(CommonProxy.mfcingotaluminium, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorebismuth, new ItemStack(CommonProxy.mfcingotbismuth, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorecalcium, new ItemStack(CommonProxy.mfcingotcalcium, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorecobalt, new ItemStack(CommonProxy.mfcingotcobalt, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorecopper, new ItemStack(CommonProxy.mfcingotcopper, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorelead, new ItemStack(CommonProxy.mfcingotlead, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoremagnesium, new ItemStack(CommonProxy.mfcingotmagnesium, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorenickel, new ItemStack(CommonProxy.mfcingotaluminium, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoreosmium, new ItemStack(CommonProxy.mfcingotnickel, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoreplatinum, new ItemStack(CommonProxy.mfcingotplatinum, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoresilver, new ItemStack(CommonProxy.mfcingotsilver, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoretin, new ItemStack(CommonProxy.mfcingottin, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcoretungsten, new ItemStack(CommonProxy.mfcingottungsten, 2), 1.0F);
+		this.addRecipieBlock(CommonProxy.mfcorezinc, new ItemStack(CommonProxy.mfcingotzinc, 2), 1.0F);
+		this.addRecipieBlock(Blocks.iron_ore, new ItemStack(CommonProxy.mfcingotzinc, 2), 1.0F);
+		this.addRecipieBlock(Blocks.gold_ore, new ItemStack(CommonProxy.mfcingotzinc, 2), 1.0F);
 		this.addRecipieBlock(Blocks.log, new ItemStack(Items.coal, 1), 1.0F);
 		
 	}

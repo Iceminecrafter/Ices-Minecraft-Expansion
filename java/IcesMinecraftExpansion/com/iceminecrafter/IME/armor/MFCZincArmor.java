@@ -1,6 +1,7 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -11,23 +12,23 @@ public class MFCZincArmor extends ItemArmor{
 	public MFCZincArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(IcesMinecraftExpansion.MFC);
+		setCreativeTab(CommonProxy.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == IcesMinecraftExpansion.MFCZincHelmet){
+		if(stack.getItem() == CommonProxy.MFCZincHelmet){
 			return "metalforgecraft" + ":textures/models/armor/ZincArmor_1.png";
 		}
 		
-		if(stack.getItem() == IcesMinecraftExpansion.MFCZincChestplate){
+		if(stack.getItem() == CommonProxy.MFCZincChestplate){
 			return "metalforgecraft" + ":textures/models/armor/ZincArmor_1.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCZincLeggings){
+		if(stack.getItem() == CommonProxy.MFCZincLeggings){
 			return "metalforgecraft" + ":textures/models/armor/ZincArmor_2.png";
 		}
-		if(stack.getItem() == IcesMinecraftExpansion.MFCZincBoots){
+		if(stack.getItem() == CommonProxy.MFCZincBoots){
 			return "metalforgecraft" + ":textures/models/armor/ZincArmor_1.png";
 		}
 		else {

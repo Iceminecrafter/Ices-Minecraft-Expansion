@@ -5,11 +5,12 @@ import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
+import com.iceminecrafter.IME.proxy.CommonProxy;
 
 public class MFCShaleOil extends BlockFluidClassic{
 
 	public MFCShaleOil(Fluid fluid, Material material) {
-		super(IcesMinecraftExpansion.ShaleOil, Material.water);
+		super(CommonProxy.ShaleOil, Material.water);
 		
 		
 	}
