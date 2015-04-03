@@ -1,14 +1,18 @@
 package com.iceminecrafter.IME.tools;
 
-import net.minecraft.item.ItemSpade;
+import com.iceminecrafter.IME.IcesMinecraftExpansion;
 
-import com.iceminecrafter.IME.proxy.CommonProxy;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
 
 public class MFCAluminiumShovel extends ItemSpade{
 
 	public MFCAluminiumShovel(ToolMaterial material) {
 		super(material);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 	}
 
 }

@@ -3,7 +3,6 @@ package com.iceminecrafter.IME.blocks;
 import java.util.Random;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 import com.iceminecrafter.IME.tileentity.TileEntityMFCSmelter;
 
 import net.minecraft.block.Block;
@@ -63,11 +62,11 @@ public class MFCSmelter extends BlockContainer {
 	}
 
 	public Item getItemDropped(int par1, Random random, int par3) {
-		return Item.getItemFromBlock(CommonProxy.MFCSmelter);
+		return Item.getItemFromBlock(IcesMinecraftExpansion.MFCSmelter);
 	}
 
 	public Item getItem(World world, int par2, int par3, int par4) {
-		return Item.getItemFromBlock(CommonProxy.MFCSmelter);
+		return Item.getItemFromBlock(IcesMinecraftExpansion.MFCSmelter);
 	}
 	
 	/**
@@ -152,9 +151,9 @@ public class MFCSmelter extends BlockContainer {
 		isBurning = true;
 
 		if (burning) {
-			world.setBlock(x, y, z, CommonProxy.MFCSmelter);
+			world.setBlock(x, y, z, IcesMinecraftExpansion.MFCSmelter);
 		} else {
-			world.setBlock(x, y, z, CommonProxy.MFCSmelteractive);
+			world.setBlock(x, y, z, IcesMinecraftExpansion.MFCSmelteractive);
 		}
 
 		isBurning = false;

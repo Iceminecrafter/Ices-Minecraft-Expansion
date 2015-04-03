@@ -1,7 +1,6 @@
 package com.iceminecrafter.IME.items;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,7 +13,7 @@ public class MFCShaleOilBucket extends ItemBucket {
 	public MFCShaleOilBucket(Block block) {
 		super(block);
 		
-		this.setCreativeTab(CommonProxy.MFC);
+		this.setCreativeTab(IcesMinecraftExpansion.MFC);
 		
 
 		
@@ -24,7 +23,7 @@ public class MFCShaleOilBucket extends ItemBucket {
 		if(!world.isAirBlock(x,y,z)){
 			return false;
 		}else {
-			world.setBlock(x, y, z, CommonProxy.MFCShaleOil, 0, 3);
+			world.setBlock(x, y, z, IcesMinecraftExpansion.MFCShaleOil, 0, 3);
 		}
 		
 		return false;

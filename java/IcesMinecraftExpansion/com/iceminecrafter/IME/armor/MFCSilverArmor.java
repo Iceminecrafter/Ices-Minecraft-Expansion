@@ -1,7 +1,6 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -12,23 +11,23 @@ public class MFCSilverArmor extends ItemArmor{
 	public MFCSilverArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == CommonProxy.MFCSilverHelmet){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCSilverHelmet){
 			return "metalforgecraft" + ":textures/models/armor/SilverArmor_1.png";
 		}
 		
-		if(stack.getItem() == CommonProxy.MFCSilverChestplate){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCSilverChestplate){
 			return "metalforgecraft" + ":textures/models/armor/SilverArmor_1.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCSilverLeggings){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCSilverLeggings){
 			return "metalforgecraft" + ":textures/models/armor/SilverArmor_2.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCSilverBoots){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCSilverBoots){
 			return "metalforgecraft" + ":textures/models/armor/SilverArmor_1.png";
 		}
 		else {

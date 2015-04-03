@@ -1,7 +1,6 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -12,23 +11,23 @@ public class MFCTinArmor extends ItemArmor{
 	public MFCTinArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == CommonProxy.MFCTinHelmet){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCTinHelmet){
 			return "metalforgecraft" + ":textures/models/armor/TinArmor_1.png";
 		}
 		
-		if(stack.getItem() == CommonProxy.MFCTinChestplate){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCTinChestplate){
 			return "metalforgecraft" + ":textures/models/armor/TinArmor_1.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCTinLeggings){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCTinLeggings){
 			return "metalforgecraft" + ":textures/models/armor/TinArmor_2.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCTinBoots){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCTinBoots){
 			return "metalforgecraft" + ":textures/models/armor/TinArmor_1.png";
 		}
 		else {

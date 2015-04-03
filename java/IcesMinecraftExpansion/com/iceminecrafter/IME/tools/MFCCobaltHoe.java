@@ -1,14 +1,18 @@
 package com.iceminecrafter.IME.tools;
 
-import net.minecraft.item.ItemHoe;
+import com.iceminecrafter.IME.IcesMinecraftExpansion;
 
-import com.iceminecrafter.IME.proxy.CommonProxy;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
 
 public class MFCCobaltHoe extends ItemHoe{
 
 	public MFCCobaltHoe(ToolMaterial material) {
 		super(material);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 	}
 
 }

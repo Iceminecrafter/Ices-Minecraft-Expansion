@@ -1,7 +1,6 @@
 package com.iceminecrafter.IME.armor;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -12,23 +11,23 @@ public class MFCCobaltArmor extends ItemArmor{
 	public MFCCobaltArmor(ArmorMaterial material, int id,
 			int placement) {
 		super(material, id, placement);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 		
 		
 		
 	}
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type){
-		if(stack.getItem() == CommonProxy.MFCCobaltHelmet){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCCobaltHelmet){
 			return "metalforgecraft" + ":textures/models/armor/CobaltArmor_1.png";
 		}
 		
-		if(stack.getItem() == CommonProxy.MFCCobaltChestplate){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCCobaltChestplate){
 			return "metalforgecraft" + ":textures/models/armor/CobaltArmor_1.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCCobaltLeggings){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCCobaltLeggings){
 			return "metalforgecraft" + ":textures/models/armor/CobaltArmor_2.png";
 		}
-		if(stack.getItem() == CommonProxy.MFCCobaltBoots){
+		if(stack.getItem() == IcesMinecraftExpansion.MFCCobaltBoots){
 			return "metalforgecraft" + ":textures/models/armor/CobaltArmor_1.png";
 		}
 		else {

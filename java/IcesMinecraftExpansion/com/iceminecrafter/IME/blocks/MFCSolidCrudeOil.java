@@ -3,7 +3,6 @@ package com.iceminecrafter.IME.blocks;
 import java.util.ArrayList;
 
 import com.iceminecrafter.IME.IcesMinecraftExpansion;
-import com.iceminecrafter.IME.proxy.CommonProxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -54,7 +53,7 @@ public class MFCSolidCrudeOil extends Block {
 
             if (material.blocksMovement() || material.isLiquid())
             {
-            	world.setBlock(x, y, z, CommonProxy.MFCCrudeOil);
+            	world.setBlock(x, y, z, IcesMinecraftExpansion.MFCCrudeOil);
             }
         }
     }

@@ -1,14 +1,14 @@
 package com.iceminecrafter.IME.tools;
 
-import net.minecraft.item.ItemAxe;
+import com.iceminecrafter.IME.IcesMinecraftExpansion;
 
-import com.iceminecrafter.IME.proxy.CommonProxy;
+import net.minecraft.item.ItemAxe;
 
 public class MFCCalciumAxe extends ItemAxe{
 
 	public MFCCalciumAxe(ToolMaterial material) {
 		super(material);
-		setCreativeTab(CommonProxy.MFC);
+		setCreativeTab(IcesMinecraftExpansion.MFC);
 	}
 
 }
