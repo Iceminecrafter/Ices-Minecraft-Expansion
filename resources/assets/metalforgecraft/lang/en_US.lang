@@ -22,6 +22,7 @@ tile.MFCCrudeOil.name=Crude Oil
 tile.MFCSmelter.name=Smelter
 
 item.MFCOilBucket.name= Crude Oil Bucket
+item.MFCShaleOilBucket.name= Shale Oil Bucket
 item.mfcingotaluminium.name=Aluminium Ingot
 item.mfcingotbismuth.name=Bismuth Ingot
 item.mfcingotcalcium.name=Calcium Ingot
