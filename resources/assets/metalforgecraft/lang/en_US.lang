@@ -18,6 +18,9 @@ tile.mfcorezinc.name=Sphalerite
 tile.mfcorecinnabar.name=Cinnabar Ore
 tile.mfcorechromium.name=Chromite
 tile.MFCCrudeOil.name=Crude Oil
+tile.MFCSolidCrudeOil.name=Solid Crude Oil
+tile.MFCOilShale.name=Oil Shale
+tile.MFCShaleOil.name=Shale Oil
 
 tile.MFCSmelter.name=Smelter
 
@@ -43,6 +46,8 @@ item.mfcrawalloycast.name=Raw Alloy Cast
 item.mfcingotbrasscast.name=Brass Alloy Cast
 item.mfcingotbrass.name=Brass Ingot
 item.mfcingotchromium.name=Chromium Ingot
+item.OilyClay.name=Oily Clay
+item.OilySand.name=Oily Sand
 
 item.MFCAloe.name=Aloe vera
 item.MFCArnica.name=Arnica flower
@@ -65,7 +70,7 @@ item.MFCBismuthSword.name=Bismuth Sword
 item.MFCBismuthShovel.name=Bismuth Shovel
 item.MFCBismuthHoe.name=Bismuth Hoe
 
-item.MFCCalciumAxe.name=Aluminium Axe
+item.MFCCalciumAxe.name=Calcium Axe
 item.MFCCalciumPickaxe.name=Calcium Pickaxe
 item.MFCCalciumSword.name=Calcium Sword
 item.MFCCalciumShovel.name=Calcium Shovel
@@ -206,3 +211,19 @@ item.MFCZincHelmet.name=Zinc Helmet
 item.MFCZincChestplate.name=Zinc Chestplate
 item.MFCZincLeggings.name=Zinc Leggings
 item.MFCZincBoots.name=Zinc Boots
+
+
+
+
+item.HSNormalCardPack.name=Classic Card Pack
+item.HSNormalCardCommon.name=Classic Common Card
+item.HSNormalCardRare.name=Classic Rare Card
+item.HSNormalCardEpic.name=Classic Epic Card
+item.HSNormalCardLegendary.name=Classic Legendary Card
+
+item.HSGvGCardPack.name=Goblins vs Gnomes Card Pack
+item.HSGvGCardCommon.name=Goblins vs Gnomes Common Card
+item.HSGvGCardRare.name=Goblins vs Gnomes Rare Card
+item.HSGvGCardEpic.name=Goblins vs Gnomes Epic Card
+item.HSGvGCardLegendary.name=Goblins vs Gnomes Legendary Card
+

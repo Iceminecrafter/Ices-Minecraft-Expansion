@@ -9,7 +9,7 @@ import net.minecraftforge.fluids.Fluid;
 public class MFCCrudeOil extends BlockFluidClassic{
 
 	public MFCCrudeOil(Fluid fluid, Material material) {
-		super(IcesMinecraftExpansion.CrudeOil, Material.water);
+		super(IcesMinecraftExpansion.CrudeOil, IcesMinecraftExpansion.materialOil);
 		
 		
 	}

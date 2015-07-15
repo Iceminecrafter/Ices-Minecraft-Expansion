@@ -152,14 +152,14 @@ public class MFCGeneration implements IWorldGenerator{
 			int chunkY = random.nextInt(50);
 			int chunkZ = z + random.nextInt(16);
 			
-			(new WorldGenMinable(IcesMinecraftExpansion.MFCOilShale, 30)).generate(world, random, chunkX, chunkY, chunkZ);
+			(new WorldGenMinable(IcesMinecraftExpansion.MFCOilShale, 3)).generate(world, random, chunkX, chunkY, chunkZ);
 		}
 		for(int i = 0; i < 4; i++) {
 			int chunkX = x + random.nextInt(16);
 			int chunkY = random.nextInt(30);
 			int chunkZ = z + random.nextInt(16);
 			
-			(new WorldGenMinable(IcesMinecraftExpansion.MFCSolidCrudeOil, 30)).generate(world, random, chunkX, chunkY, chunkZ);
+			(new WorldGenMinable(IcesMinecraftExpansion.MFCSolidCrudeOil, 3)).generate(world, random, chunkX, chunkY, chunkZ);
 		}
 		
 		

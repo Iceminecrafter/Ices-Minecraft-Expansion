@@ -9,7 +9,7 @@ import com.iceminecrafter.IME.IcesMinecraftExpansion;
 public class MFCShaleOil extends BlockFluidClassic{
 
 	public MFCShaleOil(Fluid fluid, Material material) {
-		super(IcesMinecraftExpansion.ShaleOil, Material.water);
+		super(IcesMinecraftExpansion.ShaleOil, IcesMinecraftExpansion.materialOil);
 		
 		
 	}

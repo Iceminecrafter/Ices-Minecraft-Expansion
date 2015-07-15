@@ -257,11 +257,94 @@ public class CommonProxy {
 		FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack(IcesMinecraftExpansion.CrudeOil.getName(), FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(IcesMinecraftExpansion.MFCOilBucket), new ItemStack(Items.bucket)));
 		FluidContainerRegistry.registerFluidContainer(new FluidContainerData(FluidRegistry.getFluidStack(IcesMinecraftExpansion.ShaleOil.getName(), FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(IcesMinecraftExpansion.MFCShaleOilBucket), new ItemStack(Items.bucket)));
 		
+		
+		
+		GameRegistry.registerItem(IcesMinecraftExpansion.OilyClay, "OilyClay");
+		GameRegistry.registerItem(IcesMinecraftExpansion.OilySand, "OilySand");
+		
+		//Hearthstone Card Pack
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSNormalCardPack, "HSNormalCardPack");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSGvGCardPack, "HSGvSGCardPack");
+		
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSNormalCardCommon, "HSNormalCardCommon");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSNormalCardRare, "HSNormalCardRare");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSNormalCardEpic, "HSNormalCardEpic");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSNormalCardLegendary, "HSNormalCardLegendary");
+		
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSGvGCardCommon, "HSGvGCardCommon");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSGvGCardRare, "HSGvGCardRare");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSGvGCardEpic, "HSGvGCardEpic");
+		GameRegistry.registerItem(IcesMinecraftExpansion.HSGvGCardLegendary, "HSGvGCardLegendary");
+		
+		
+		//Hearthstone Cards - Normal - Common
+		
+		
+		
+		//Hearthstone Cards - Normal - Rare
+		
+		
+		//Hearthstone Cards - Normal - Epic 
+		
+		
+		//Hearthstone Cards - Normal - Legendary
+		
+		
+		
+		
+		
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Common
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Rare
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Epic
+		
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Legendary
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 	public void init(FMLInitializationEvent e){
 		//Ore Dictionary
 		
-				OreDictionary.registerOre("ingotAluminium", IcesMinecraftExpansion.mfcingotaluminium);
+				OreDictionary.registerOre("ingotAluminum", IcesMinecraftExpansion.mfcingotaluminium);
 				OreDictionary.registerOre("ingotBismuth", IcesMinecraftExpansion.mfcingotbismuth);
 				OreDictionary.registerOre("ingotCalcium", IcesMinecraftExpansion.mfcingotcalcium);
 				OreDictionary.registerOre("ingotCobalt", IcesMinecraftExpansion.mfcingotcobalt);

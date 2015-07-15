@@ -92,9 +92,21 @@ import com.iceminecrafter.IME.blocks.MFCSmelter;
 import com.iceminecrafter.IME.blocks.MFCSolidCrudeOil;
 import com.iceminecrafter.IME.event.MFCFillBucketEvent;
 import com.iceminecrafter.IME.gen.MFCGeneration;
+import com.iceminecrafter.IME.handler.MFCBucketHandler;
 import com.iceminecrafter.IME.handler.MFCGuiHandler;
+import com.iceminecrafter.IME.items.GvGCardCommon;
+import com.iceminecrafter.IME.items.GvGCardEpic;
+import com.iceminecrafter.IME.items.GvGCardLegendary;
+import com.iceminecrafter.IME.items.GvGCardPack;
+import com.iceminecrafter.IME.items.GvGCardRare;
+import com.iceminecrafter.IME.items.MFCFertilizer;
 import com.iceminecrafter.IME.items.MFCOilBucket;
 import com.iceminecrafter.IME.items.MFCShaleOilBucket;
+import com.iceminecrafter.IME.items.NormalCardCommon;
+import com.iceminecrafter.IME.items.NormalCardEpic;
+import com.iceminecrafter.IME.items.NormalCardLegendary;
+import com.iceminecrafter.IME.items.NormalCardPack;
+import com.iceminecrafter.IME.items.NormalCardRare;
 import com.iceminecrafter.IME.items.herbs.MFCAloe;
 import com.iceminecrafter.IME.items.herbs.MFCArnica;
 import com.iceminecrafter.IME.items.herbs.MFCGinger;
@@ -175,6 +187,18 @@ import com.iceminecrafter.IME.tools.MFCZincHoe;
 import com.iceminecrafter.IME.tools.MFCZincPickaxe;
 import com.iceminecrafter.IME.tools.MFCZincShovel;
 import com.iceminecrafter.IME.tools.MFCZincSword;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -375,6 +399,11 @@ public class IcesMinecraftExpansion{
 	public static Item mfcingotchromium;
 	public static Item mfcingotbrass;
 	public static Item mfcingotbrasscast;
+	
+	
+	public static Item MFCMeatAsh;
+	public static Item MFCPlantAsh;
+	public static Item Fertilizer;
 
 	//Aluminium Armour
 	
@@ -627,6 +656,29 @@ public class IcesMinecraftExpansion{
 		public static Fluid ShaleOil;
 		
 		public static Item MFCShaleOilBucket;
+		
+		public static Item OilyClay;
+		
+		public static Item OilySand;
+		
+		//Hearthstone Item Pack
+		public static Item HSNormalCardPack;
+		public static Item HSGvGCardPack;
+		
+		public static Item HSNormalCardCommon;
+		public static Item HSNormalCardRare;
+		public static Item HSNormalCardEpic;
+		public static Item HSNormalCardLegendary;
+		public static Item HSGvGCardCommon;
+		public static Item HSGvGCardRare;
+		public static Item HSGvGCardEpic;
+		public static Item HSGvGCardLegendary;
+		
+		//Hearthstone Normal Cards
+		
+		
+		
+		//Hearthstone Goblins Vs Gnomes
 	
 		
 		@SidedProxy(clientSide="com.iceminecrafter.IME.proxy.ClientProxy",serverSide="com.iceminecrafter.IME.proxy.CommonProxy")
@@ -635,13 +687,78 @@ public class IcesMinecraftExpansion{
 	
 	public static CreativeTabs MFC = new CreativeTabs("Ices Minecraft Expansion"){
 		public Item getTabIconItem() {
-			return Items.minecart;
+			return IcesMinecraftExpansion.MFCCobaltSword;
 		}
 		
 	};
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e){
+		
+		OilyClay = new Item().setUnlocalizedName("OilyClay").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":OilyClay");
+		OilySand = new Item().setUnlocalizedName("OilySand").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":OilySand");
+
+		
+		//Hearthstone Item Packs
+		HSNormalCardPack = new NormalCardPack().setUnlocalizedName("HSNormalCardPack").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSNormalCardPack");
+		HSGvGCardPack = new GvGCardPack().setUnlocalizedName("HSGvGCardPack").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSGvGCardPack");
+		
+		HSNormalCardCommon = new NormalCardCommon().setUnlocalizedName("HSNormalCardCommon").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSNormalCardCommon");
+		HSNormalCardRare = new NormalCardRare().setUnlocalizedName("HSNormalCardRare").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSNormalCardRare");
+		HSNormalCardEpic = new NormalCardEpic().setUnlocalizedName("HSNormalCardEpic").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSNormalCardEpic");
+		HSNormalCardLegendary = new NormalCardLegendary().setUnlocalizedName("HSNormalCardLegendary").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSNormalCardLegendary");
+		HSGvGCardCommon = new GvGCardCommon().setUnlocalizedName("HSGvGCardCommon").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSGvGCardCommon");
+		HSGvGCardRare = new GvGCardRare().setUnlocalizedName("HSGvGCardRare").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSGvGCardRare");
+		HSGvGCardEpic = new GvGCardEpic().setUnlocalizedName("HSGvGCardEpic").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSGvGCardEpic");
+		HSGvGCardLegendary = new GvGCardLegendary().setUnlocalizedName("HSGvGCardLegendary").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":HSGvGCardLegendary");
+		
+		
+		
+		
+		//Hearthstone Cards - Normal - Common
+		
+		
+		
+		//Hearthstone Cards - Normal - Rare
+		
+		
+		//Hearthstone Cards - Normal - Epic 
+		
+		
+		//Hearthstone Cards - Normal - Legendary
+		
+		
+		
+		
+		
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Common
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Rare
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Epic
+		
+		
+		
+		
+		//Hearthstone Cards - Goblins Vs Gnomes - Legendary
+		
+		
+		
+		
+		//Plants shit
+		MFCMeatAsh = new Item().setUnlocalizedName("MFCMeatAsh").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":dust_ash");
+		MFCPlantAsh = new Item().setUnlocalizedName("mfcingotbrass").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":dust_ash");
+		Fertilizer = new MFCFertilizer().setUnlocalizedName("mfcingotbrass").setCreativeTab(MFC).setTextureName("metalforgecraft" + ":fertilizer");
+		
+		
+		
 		
 		//Fluid related (Do in order)
 		CrudeOil = new Fluid("CrudeOil").setDensity(2000);
@@ -655,7 +772,7 @@ public class IcesMinecraftExpansion{
 		
 		MFCSolidCrudeOil = new MFCSolidCrudeOil().setBlockName("MFCSolidCrudeOil").setCreativeTab(MFC).setBlockTextureName("metalforgecraft" + ":CrudeOilStill");
 		
-		MFCOilShale = new MFCOilShale().setBlockName("MFCOilShale").setCreativeTab(MFC).setBlockTextureName("metalforgecraft" + ":OilShale");
+		MFCOilShale = new com.iceminecrafter.IME.blocks.MFCOilShale().setBlockName("MFCOilShale").setCreativeTab(MFC).setBlockTextureName("metalforgecraft" + ":OilShale");
 		
 		
 		
@@ -666,6 +783,13 @@ public class IcesMinecraftExpansion{
 		
 		MFCShaleOilBucket = new MFCShaleOilBucket(MFCShaleOil).setUnlocalizedName("MFCShaleOilBucket").setMaxStackSize(1).setContainerItem(Items.bucket).setTextureName("metalforgecraft" + ":OilBucket");
 		
+		MinecraftForge.EVENT_BUS.register(new MFCBucketHandler());
+		
+		MFCBucketHandler.INSTANCE.buckets.put(MFCShaleOil, MFCShaleOilBucket);
+		MinecraftForge.EVENT_BUS.register(MFCBucketHandler.INSTANCE);
+		
+		MFCBucketHandler.INSTANCE.buckets.put(MFCCrudeOil, MFCOilBucket);
+		MinecraftForge.EVENT_BUS.register(MFCBucketHandler.INSTANCE);
 		
 		//Machines
 		MFCSmelter = new MFCSmelter(false).setBlockName("MFCSmelter").setCreativeTab(MFC).setStepSound(Block.soundTypeStone).setBlockTextureName("metalforgecraft" + ":Smelteroff");
